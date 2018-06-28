@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         TextView phrases = findViewById(com.example.vipul.Miwok.R.id.phrases);
         phrases.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
-                startActivity(familyIntent);
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(phrasesIntent);
                 Toast.makeText(view.getContext(), "Open the list of phrases", Toast.LENGTH_SHORT).show();
             }
         });
