@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.vipul.Miwok">
 
     <application
@@ -8,7 +9,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name="com.example.vipul.Miwok.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +20,20 @@
         </activity>
         <activity
             android:name="com.example.vipul.Miwok.NumbersActivity"
-            android:label="@string/category_numbers" />
+            android:label="@string/category_numbers"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name="com.example.vipul.Miwok.FamilyActivity"
-            android:label="@string/category_family" />
+            android:label="@string/category_family"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name="com.example.vipul.Miwok.ColorsActivity"
-            android:label="@string/category_colors" />
+            android:label="@string/category_colors"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name="com.example.vipul.Miwok.PhrasesActivity"
-            android:label="@string/category_phrases" />
+            android:label="@string/category_phrases"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
